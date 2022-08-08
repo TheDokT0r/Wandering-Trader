@@ -1,0 +1,10 @@
+[
+  {
+    "ID": 0,
+    "name": "Template Item",
+    "min_val": 50,
+    "max_val": 100,
+    "tradable": true,
+    "scarcity": 5
+  }
+]
