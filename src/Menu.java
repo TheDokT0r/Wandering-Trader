@@ -15,11 +15,11 @@ public class Menu {
         showData();
 
         JFrame frame = new JFrame("Intro");
-        frame.setSize(1280, 720);
         //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setContentPane(MenuPanel);
-        frame.pack();
+        frame.setSize(1280, 720);
+        //frame.pack();
         frame.setVisible(true);
     }
 

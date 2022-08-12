@@ -39,7 +39,6 @@ public class Intro {
 
     public void start() throws Exception { //Sets data on start
         frame = new JFrame("Intro");
-        frame.setSize(1280, 720);
         //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
@@ -68,7 +67,8 @@ public class Intro {
         });
 
         frame.setContentPane(IntroPanel);
-        frame.pack();
+        frame.setSize(1280, 720);
+        //frame.pack();
         frame.setVisible(true);
     }
 }
