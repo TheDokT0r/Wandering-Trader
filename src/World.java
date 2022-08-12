@@ -1,5 +1,5 @@
 public class World {
-    private int ID;
+    private final int ID;
     public final String WorldName;
     public Player Player;
     public City[] Cities;
@@ -15,5 +15,18 @@ public class World {
         Shops = shops;
         Items = items;
         CurrencySymbol = currencySymbol;
+    }
+
+
+    public City getCurrentCity() {
+        int cityID = Player.getCurrentCityID();
+
+        for (City city : Cities) {
+            if (city.getID() == cityID) {
+                return city;
+            }
+        }
+
+        return null;
     }
 }
