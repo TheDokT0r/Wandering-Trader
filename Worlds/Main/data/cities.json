@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "ID": 0,
+      "name": "Maligrad",
+      "pop": 500,
+      "lvl": 0,
+      "connected_cities": [ 1, 2 ],
+      "shops_ids": [ 0, 1]
+    }
+  ]
+}

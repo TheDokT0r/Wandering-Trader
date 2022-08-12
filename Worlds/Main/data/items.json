@@ -1,0 +1,154 @@
+{
+  "data":
+[
+  {
+    "ID": 0,
+    "name": "Pure Diamond",
+    "min_val": 200,
+    "max_val": 550,
+    "tradable": true,
+    "scarcity": 2
+  },
+  {
+    "ID": 1,
+    "name": "Smalted Gold",
+    "min_val": 50,
+    "max_val": 150,
+    "tradable": true,
+    "scarcity": 6
+  },
+  {
+    "ID": 2,
+    "name": "Smalted Silver",
+    "min_val": 20,
+    "max_val": 100,
+    "tradable": true,
+    "scarcity": 8
+  },
+  {
+    "ID": 3,
+    "name": "Copper Pieces",
+    "min_val": 10,
+    "max_val": 50,
+    "tradable": true,
+    "scarcity": 10
+  },
+  {
+    "ID": 4,
+    "name": "Pure Stone",
+    "min_val": 50,
+    "max_val": 70,
+    "tradable": true,
+    "scarcity": 12
+  },
+  {
+    "ID": 5,
+    "name": "Pure Gold",
+    "min_val": 100,
+    "max_val": 300,
+    "tradable": true,
+    "scarcity": 3
+  },
+
+
+  {
+    "ID": 6,
+    "name": "Cut Wood",
+    "min_val": 5,
+    "max_val": 10,
+    "tradable": true,
+    "scarcity": 20
+  },
+  {
+    "ID": 7,
+    "name": "Wood Logs",
+    "min_val": 8,
+    "max_val": 14,
+    "tradable": true,
+    "scarcity": 18
+  },
+  {
+    "ID": 8,
+    "name": "High-Quality Wood",
+    "min_val": 10,
+    "max_val": 25,
+    "tradable": true,
+    "scarcity": 14
+  },
+
+
+  {
+    "ID": 9,
+    "name": "Arrows",
+    "min_val": 80,
+    "max_val": 150,
+    "tradable": true,
+    "scarcity": 6
+  },
+  {
+    "ID": 10,
+    "name": "Helmet",
+    "min_val": 100,
+    "max_val": 200,
+    "tradable": true,
+    "scarcity": 3
+  },
+  {
+    "ID": 11,
+    "name": "Iron Sword",
+    "min_val": 140,
+    "max_val": 240,
+    "tradable": true,
+    "scarcity": 2
+  },
+  {
+    "ID": 12,
+    "name": "Steel Sword",
+    "min_val": 200,
+    "max_val": 300,
+    "tradable": true,
+    "scarcity": 2
+  },
+  {
+    "ID": 13,
+    "name": "Iron Sheild",
+    "min_val": 100,
+    "max_val": 200,
+    "tradable": true,
+    "scarcity": 3
+  },
+
+  {
+    "ID": 14,
+    "name": "Holy Sword",
+    "min_val": 1000,
+    "max_val": 2500,
+    "tradable": false,
+    "scarcity": 1
+  },
+  {
+    "ID": 15,
+    "name": "Holy Sheild",
+    "min_val": 800,
+    "max_val": 1500,
+    "tradable": false,
+    "scarcity": 2
+  },
+  {
+    "ID": 16,
+    "name": "Diamond Sword",
+    "min_val": 2000,
+    "max_val": 4000,
+    "tradable": false,
+    "scarcity": 1
+  },
+  {
+    "ID": 17,
+    "name": "Final Sword",
+    "min_val": 4000,
+    "max_val": 8000,
+    "tradable": false,
+    "scarcity": 1
+  }
+]
+}

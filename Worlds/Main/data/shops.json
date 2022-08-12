@@ -1,0 +1,11 @@
+{
+  "data": [
+    {
+      "ID": 0,
+      "name": "Shop Template",
+      "trader_name": "Template Name",
+      "shop_type": "Matirials Shop",
+      "items": [0, 1, 2, 3, 4]
+    }
+  ]
+}

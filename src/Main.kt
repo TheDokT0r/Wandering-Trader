@@ -10,9 +10,6 @@ fun main(args:Array<String>) {
 
     val world = wm.getWorldData(worlds[0])
 
-    val intro = Intro()
+    val intro = Intro(world)
     intro.start()
-
-    val parts = intro.readIntro("./data/.intro")
-    intro.setIntro(parts, 0)
 }
