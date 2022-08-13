@@ -6,10 +6,10 @@ import java.io.File
 import java.io.FileReader
 
 //NOTE: converting data to long first, and then to int, because for some reason, the Kotlin debuger says it's a bug otherwise
-public class WorldsMannager() {
+class WorldsMannager() {
     private val worldsFolderPath: String = "./Worlds/"
 
-    public fun getWorldsPaths(): Array<String> {
+    fun getWorldsPaths(): Array<String> {
         val worldsArr = mutableListOf<String>()
 
         File(worldsFolderPath).walk().forEach {
@@ -22,10 +22,10 @@ public class WorldsMannager() {
         return worldsArr.toTypedArray()
     }
 
-    public fun getWorldData(mainDirPath: String): World { //Get all of the world data
+    fun getWorldData(mainDirPath: String): World { //Get all of the world data
         val info = getInfoJson(mainDirPath)
         val items = getItems(mainDirPath)
-        val shops = getShops(mainDirPath, items as Array<Item>)
+        val shops = getShops(mainDirPath, items)
         val cities = getCities(mainDirPath, shops)
 
         val player = Player("Idk", (info["startingCity"] as Long).toInt(), (info["bal"] as Long).toInt())
@@ -74,7 +74,7 @@ public class WorldsMannager() {
         val jo: JSONObject = obj as JSONObject
         val ja: JSONArray = jo["data"] as JSONArray
 
-        var shops = arrayListOf<Shop>()
+        val shops = arrayListOf<Shop>()
 
         val t = ja.iterator()
         while(t.hasNext()) {
@@ -101,7 +101,7 @@ public class WorldsMannager() {
         val jo: JSONObject = obj as JSONObject
         val ja: JSONArray = jo["data"] as JSONArray
 
-        var cities = arrayListOf<City>()
+        val cities = arrayListOf<City>()
 
         val t = ja.iterator()
         while(t.hasNext()) {
@@ -147,12 +147,10 @@ public class WorldsMannager() {
     }
 
     private fun JSonToInt(ja : JSONArray) : IntArray {
-        var arr = IntArray(ja.size)
+        val arr = IntArray(ja.size)
 
-        var counter = 0
-        for(item in ja) {
+        for((counter, item) in ja.withIndex()) {
             arr[counter] = (item as Long).toInt()
-            counter++
         }
 
         return arr
