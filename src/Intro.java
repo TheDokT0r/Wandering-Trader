@@ -1,6 +1,4 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.Scanner;
 
@@ -8,14 +6,22 @@ public class Intro {
     int current;
     String introPath;
 
-    private JButton button1;
+    private JButton btn_next;
     private JLabel lbl_text;
     private JPanel IntroPanel;
     private World world;
     private JFrame frame;
+    int W, H; //Resolution
+    boolean fullscreen; //Is the game in full screen
 
-    public Intro(World world) {
+    public Intro(World world) throws Exception {
         this.world = world;
+
+        Settings settings = new Settings();
+        W = settings.getRes()[0];
+        H = settings.getRes()[1];
+
+        fullscreen = settings.fullscreen();
     }
 
     public void setIntro(String[] parts, int currentIndex) {
@@ -47,7 +53,7 @@ public class Intro {
         current = 0;
         setIntro(parts, current);
 
-        button1.addActionListener(e -> {
+        btn_next.addActionListener(e -> {
             try {
                 String[] parts1 = readIntro(introPath);
 
@@ -67,8 +73,14 @@ public class Intro {
         });
 
         frame.setContentPane(IntroPanel);
-        frame.setSize(1280, 720);
+        frame.setSize(W, H);
         //frame.pack();
+        if (fullscreen) {
+            frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            frame.setUndecorated(true);
+            frame.setVisible(true);
+        }
+
         frame.setVisible(true);
     }
 }

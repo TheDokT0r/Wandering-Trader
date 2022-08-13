@@ -47,12 +47,12 @@ public class Player {
         }
 
         Item[] temp = new Item[Inventory.length + 1]; //Item doesn't exist in inventory
-        System.arraycopy(Inventory, 0, temp, 0, temp.length);
+        System.arraycopy(Inventory, 0, temp, 0, temp.length - 1);
         temp[Inventory.length] = item;
         Inventory = temp;
 
         int[] quantityTemp = new int[InvQuantity.length + 1];
-        System.arraycopy(InvQuantity, 0, quantityTemp, 0, quantityTemp.length);
+        System.arraycopy(InvQuantity, 0, quantityTemp, 0, quantityTemp.length - 1);
         quantityTemp[InvQuantity.length] = quantity;
         InvQuantity = quantityTemp;
     }

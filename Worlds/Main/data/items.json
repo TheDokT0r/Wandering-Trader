@@ -149,6 +149,14 @@
     "max_val": 8000,
     "tradable": false,
     "scarcity": 1
+  },
+  {
+    "ID": 18,
+    "name": "The Sword",
+    "min_val": 20000,
+    "max_val": 20000,
+    "tradable": true,
+    "scarcity": 1
   }
 ]
 }
