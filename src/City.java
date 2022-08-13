@@ -1,9 +1,7 @@
-import java.lang.reflect.Array;
-
 public class City {
     private final int ID;
     private final String CityName;
-    private int Population;
+    private final int Population;
     private final int MinLevel; //Minimum level to access the city
 
     private final int[] ConnectedCitiesID; //ID of the cities that can be went to from current city (Don't connect to current city)
