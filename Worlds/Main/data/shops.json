@@ -2,10 +2,31 @@
   "data": [
     {
       "ID": 0,
-      "name": "Shop Template",
-      "trader_name": "Template Name",
+      "name": "Matirials Shop",
+      "trader_name": "John Doe",
       "shop_type": "Matirials Shop",
       "items": [0, 1, 2, 3, 4]
+    },
+    {
+      "ID": 1,
+      "name": "Wood Shop",
+      "trader_name": "Eldemar Vishop",
+      "shop_type": "Wood Shop",
+      "items": [5, 6, 7, 8]
+    },
+    {
+      "ID": 2,
+      "name": "Wepons Shop",
+      "trader_name": "Trador Fi Yoker",
+      "shop_type": "Wepons Shop",
+      "items": [9, 10, 11, 12, 13]
+    },
+    {
+      "ID": 3,
+      "name": "The Shop",
+      "trader_name": "Frank Sinvo",
+      "shop_type": "Sepcial Shop",
+      "items": [18]
     }
   ]
 }
