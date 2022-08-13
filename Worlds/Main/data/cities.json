@@ -5,8 +5,40 @@
       "name": "Maligrad",
       "pop": 500,
       "lvl": 0,
-      "connected_cities": [ 1, 2 ],
+      "connected_cities": [ 1, 2, 4 ],
       "shops_ids": [ 0, 1, 2]
+    },
+    {
+      "ID": 1,
+      "name": "Korad",
+      "pop": 900,
+      "lvl": 0,
+      "connected_cities": [ 0, 3 ],
+      "shops_ids": [ 0, 1, 2]
+    },
+    {
+      "ID": 2,
+      "name": "Vonfar",
+      "pop": 850,
+      "lvl": 1,
+      "connected_cities": [ 0, 3 ],
+      "shops_ids": [ 0, 2]
+    },
+    {
+      "ID": 3,
+      "name": "Tirn",
+      "pop": 1000,
+      "lvl": 2,
+      "connected_cities": [ 2, 1 ],
+      "shops_ids": [ 1, 2, 3]
+    },
+    {
+      "ID": 4,
+      "name": "Goran",
+      "pop": 400,
+      "lvl": 0,
+      "connected_cities": [ 0 ],
+      "shops_ids": [ 1] 
     }
   ]
 }

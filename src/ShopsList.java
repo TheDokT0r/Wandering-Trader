@@ -1,13 +1,14 @@
-import org.json.simple.parser.ParseException;
-
 import javax.swing.*;
-import java.io.IOException;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Objects;
 
 public class ShopsList {
     private JPanel ShopsPanel;
     private JLabel lbl_title;
     private JList<String> lst_shops;
+    private JButton btn_selectShop;
+    private JButton btn_back;
     City city;
     World world;
 
@@ -37,6 +38,7 @@ public class ShopsList {
         }
 
         frame.setVisible(true);
+        btn_selectShopClick(frame);
     }
 
 
@@ -45,11 +47,25 @@ public class ShopsList {
         final DefaultListModel<String> model = new DefaultListModel<>();
 
         for (Shop shop : shops) {
-            if(!Objects.equals(shop.getShopName(), "NULL")) {
+            /*if(!Objects.equals(shop.getShopName(), "NULL")) {
                 model.addElement(shop.getShopName());
-            }
+            }*/
+
+            model.addElement(shop.getShopName());
         }
 
         lst_shops.setModel(model);
+    }
+
+    void btn_selectShopClick(JFrame frame) {
+        btn_selectShop.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                Shop[] shops = city.getShops();
+
+                int index = lst_shops.getSelectedIndex();
+                Shop shop = city.getShops()[index];
+                System.out.println(shop.getShopName()); //Debug
+            }
+        });
     }
 }
