@@ -10,6 +10,11 @@ fun main(args:Array<String>) {
 
     val world = wm.getWorldData(worlds[0])
 
+    for (shop in world.Shops) {
+        shop.setInventory()
+        println("Inv set for shop #" + shop.id)
+    }
+
     val intro = Intro(world)
     intro.start()
 }

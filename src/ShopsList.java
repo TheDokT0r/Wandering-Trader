@@ -64,7 +64,15 @@ public class ShopsList {
 
                 int index = lst_shops.getSelectedIndex();
                 Shop shop = city.getShops()[index];
-                System.out.println(shop.getShopName()); //Debug
+                //System.out.println(shop.getShopName()); //Debug
+
+                ShopData shopData = new ShopData(world, shop);
+                try {
+                    shopData.start();
+                    frame.dispose();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
             }
         });
     }
