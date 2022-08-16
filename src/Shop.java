@@ -95,7 +95,13 @@ public class Shop {
 
                 int maxPrice = acceptedItem.getMaxValue();
                 int minPrice = acceptedItem.getMinValue();
-                pricesLst.add(rnd.nextInt(maxPrice - minPrice) + minPrice);
+
+                if(maxPrice == minPrice) {
+                    pricesLst.add(maxPrice);
+                }
+                else {
+                    pricesLst.add(rnd.nextInt(maxPrice - minPrice) + minPrice);
+                }
             }
         }
 
