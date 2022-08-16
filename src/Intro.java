@@ -1,3 +1,5 @@
+import org.jetbrains.annotations.NotNull;
+
 import javax.swing.*;
 import java.io.File;
 import java.util.Scanner;
@@ -24,7 +26,7 @@ public class Intro {
         fullscreen = settings.fullscreen();
     }
 
-    public void setIntro(String[] parts, int currentIndex) {
+    public void setIntro(String @NotNull [] parts, int currentIndex) {
         lbl_text.setText(parts[currentIndex]);
     }
 
@@ -74,7 +76,6 @@ public class Intro {
 
         frame.setContentPane(IntroPanel);
         frame.setSize(W, H);
-        //frame.pack();
         if (fullscreen) {
             frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
             frame.setUndecorated(true);

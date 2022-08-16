@@ -70,7 +70,7 @@ public class Menu {
         lbl_worldData.setText(worldData.toString());
 
         String playerData = "" + "Name: " + player.getPlayerName() +
-                "\n || Balance: " + player.getBalance();
+                "\n || Balance: " + player.getBalance() + GameWorld.CurrencySymbol;
 
         lbl_data.setText(playerData);
     }
